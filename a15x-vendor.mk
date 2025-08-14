@@ -226,7 +226,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/aee_aedv64_v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64_v2.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service-lazy.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -1229,9 +1228,6 @@ PRODUCT_PACKAGES += \
     libwapi \
     libwpa_client \
     libwvaidl \
-    libclearkeycasplugin \
-    libdrmclearkeyplugin \
-    libmockdrmcryptoplugin \
     s5kjn1_mipi_raw_IdxMgr \
     s5kjn1_mipi_raw_tuning \
     sc501cs_mipi_raw_IdxMgr \
@@ -1693,7 +1689,6 @@ PRODUCT_PACKAGES += \
     GoogleTetheringResOverlay \
     NetworkStackResOverlay \
     android.hardware.cas@1.2-service-lazy.xml \
-    android.hardware.drm-service.clearkey.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.sensors@2.0-multihal.xml \
     android.hardware.usb@1.3-service.coral.xml \
@@ -1773,7 +1768,6 @@ PRODUCT_PACKAGES += \
     hermesd \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.cas@1.2-service-lazy \
-    android.hardware.drm-service.clearkey \
     android.hardware.drm-service.widevine \
     android.hardware.dumpstate-service \
     android.hardware.gatekeeper@1.0-service \

@@ -12348,72 +12348,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libclearkeycasplugin",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/mediacas/libclearkeycasplugin.so"],
-			shared_libs: ["libprotobuf-cpp-full-3.9.1-vendorcompat", "libutils", "liblog", "libcrypto", "libstagefright_foundation", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so"],
-			shared_libs: ["libprotobuf-cpp-full-3.9.1-vendorcompat", "libutils", "liblog", "libcrypto", "libstagefright_foundation", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "mediacas",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdrmclearkeyplugin",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so"],
-			shared_libs: ["libcrypto", "liblog", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so"],
-			shared_libs: ["libcrypto", "liblog", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "mediadrm",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmockdrmcryptoplugin",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so"],
-			shared_libs: ["libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so"],
-			shared_libs: ["libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "mediadrm",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "s5kjn1_mipi_raw_IdxMgr",
 	owner: "samsung",
 	strip: {
@@ -20550,15 +20484,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.drm-service.clearkey.xml",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks-shim-service-mtk.xml",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml",
@@ -21540,24 +21465,6 @@ cc_prebuilt_binary {
 		},
 	},
 	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.drm-service.clearkey",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey"],
-			shared_libs: ["libbase", "libbinder_ndk", "libcrypto", "liblog", "libprotobuf-cpp-lite-3.9.1-vendorcompat", "libutils", "android.hardware.drm-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
 	strip: {
 		none: true,
 	},
