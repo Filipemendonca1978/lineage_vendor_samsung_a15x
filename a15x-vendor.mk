@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/etc/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml \
     vendor/samsung/a15x/proprietary/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects_common.conf \
     vendor/samsung/a15x/proprietary/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/samsung/a15x/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/samsung/a15x/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
@@ -644,19 +643,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
-    libdatasource \
-    libdatasource_local_cache \
-    libmedia_codeclist \
-    libomafldrm \
-    libstagefright_aidl_bufferpool2 \
-    libstagefright_codecbase \
-    libstagefright_framecapture_utils \
-    libstagefright_httplive_sec \
-    libstagefright_surface_utils \
     libarcsoft_photoeditor.arcsoft \
-    libhdcp2 \
-    libhdcp_client_aidl \
-    libstagefright_hdcp \
     arm.graphics-V2-ndk \
     arm.graphics-V3-ndk \
     arm.mali.platform-V1-ndk \
