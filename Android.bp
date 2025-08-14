@@ -17748,14 +17748,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libhyper",
+	name: "libhyper_vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libhyper.so"],
+			srcs: ["proprietary/vendor/lib64/libhyper_vendor.so"],
 			shared_libs: ["libutils", "libcutils", "libhardware", "liblog", "libbase", "libjsoncpp", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -22509,7 +22509,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service"],
-			shared_libs: ["libbase", "libhyper", "libutils", "libcutils", "libhardware", "liblog", "libbinder_ndk", "vendor.samsung.hardware.hyper-V2-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libhyper_vendor", "libutils", "libcutils", "libhardware", "liblog", "libbinder_ndk", "vendor.samsung.hardware.hyper-V2-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

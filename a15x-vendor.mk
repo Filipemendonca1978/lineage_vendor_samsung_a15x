@@ -1525,7 +1525,7 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter \
     libhwm \
     libhwvault \
-    libhyper \
+    libhyper_vendor \
     libifcutils_mtk \
     libimagebuffer_wrapper \
     libimageio \
