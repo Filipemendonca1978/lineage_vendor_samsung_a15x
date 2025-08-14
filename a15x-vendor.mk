@@ -13,19 +13,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/samsung/a15x/proprietary/system_ext/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_audio_policy_configuration.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_configuration_stub.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_configuration.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_product_strategies.xml \
     vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/audio_policy_volumes.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default_volume_tables.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/hearing_aid_audio_policy_configuration.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/samsung/a15x/proprietary/system_ext/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/a15x/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/samsung/a15x/proprietary/vendor/etc/AudioLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.xml \
     vendor/samsung/a15x/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
@@ -657,10 +650,8 @@ PRODUCT_PACKAGES += \
     libdatasource \
     libdatasource_local_cache \
     libmedia_codeclist \
-    libmpbase \
     libomafldrm \
     libstagefright_aidl_bufferpool2 \
-    libstagefright_bufferpool@2.0.1 \
     libstagefright_codecbase \
     libstagefright_framecapture_utils \
     libstagefright_graphicbuffersource_aidl \
@@ -670,7 +661,6 @@ PRODUCT_PACKAGES += \
     libhdcp2 \
     libhdcp_client_aidl \
     libstagefright_hdcp \
-    vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk \
     arm.graphics-V2-ndk \
     arm.graphics-V3-ndk \
     arm.mali.platform-V1-ndk \
@@ -684,7 +674,6 @@ PRODUCT_PACKAGES += \
     libMEOW_gift \
     libMEOW_qt \
     libMEOW_trace \
-    libGLES_mali \
     gc02m2_mipi_raw_IdxMgr \
     gc02m2_mipi_raw_tuning \
     gc13a0_mipi_raw_IdxMgr \
@@ -695,6 +684,8 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.gatekeeper@1.0-impl \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.renderscript@1.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.thermal@1.0-impl \
@@ -711,12 +702,6 @@ PRODUCT_PACKAGES += \
     gralloc.common \
     gralloc.default \
     local_time.default \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
-    gralloc.common \
-    vendor.mediatek.hardware.camera.atms@1.0-impl \
-    vendor.mediatek.hardware.pq_aidl-impl \
-    vulkan.mali \
     power.default \
     sound_trigger.primary.default \
     thermal_hal \
@@ -1188,6 +1173,7 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libpadm \
     libperfctl_vendor \
+    libpixelflinger \
     libpkm \
     libpower_timer \
     libpowerhal \
@@ -1266,56 +1252,6 @@ PRODUCT_PACKAGES += \
     libclearkeycasplugin \
     libdrmclearkeyplugin \
     libmockdrmcryptoplugin \
-    arm.graphics-V2-ndk \
-    arm.graphics-V3-ndk \
-    arm.mali.platform-V1-ndk \
-    gc02m2_mipi_raw_IdxMgr \
-    gc02m2_mipi_raw_tuning \
-    gc13a0_mipi_raw_IdxMgr \
-    gc13a0_mipi_raw_tuning \
-    hi5022q_mipi_raw_IdxMgr \
-    hi5022q_mipi_raw_tuning \
-    lib3a.ae.core \
-    lib3a.ae \
-    lib3a.awb.core \
-    lib3a.log \
-    libaal_cust_func \
-    libaalservice \
-    libaiawb_moon_model \
-    libaiawb_sun_model \
-    libaiselector \
-    libarm_egl_properties_sysprop \
-    libarm_gralloc_properties_sysprop \
-    libcam.hal3a.log \
-    libcam.halsensor.hwintegration \
-    libcamalgo.platform2 \
-    libcameracustom.lens \
-    libcameracustom \
-    libdpframework \
-    libgpudataproducer \
-    liblibarm_mali_config_sysprops \
-    libmmagent \
-    libmmlpqImpl \
-    libmtk_drvb \
-    libmtkcam.atmseventmgr \
-    libmtkcam_debugutils \
-    libmtkcam_grallocutils \
-    libmtkcam_metadata \
-    libmtkcam_modulehelper \
-    libmtkcam_stdutils \
-    libmtkcam_sysutils \
-    libmtkcam_tuning_utils \
-    libmtkcam_ulog \
-    libneuralnetworks_sl_driver_mtk_prebuilt \
-    libneuron_adapter_mgvi \
-    libnir_neon_driver \
-    libpq_cust_base \
-    libpq_prot \
-    libpqparamparser \
-    s5kjn1_mipi_raw_IdxMgr \
-    s5kjn1_mipi_raw_tuning \
-    sc501cs_mipi_raw_IdxMgr \
-    sc501cs_mipi_raw_tuning \
     s5kjn1_mipi_raw_IdxMgr \
     s5kjn1_mipi_raw_tuning \
     sc501cs_mipi_raw_IdxMgr \
@@ -1349,6 +1285,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms@1.0 \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
@@ -1424,23 +1361,17 @@ PRODUCT_PACKAGES += \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
     libvpx \
-    libvcodec_utility \
-    libvcodecdrv \
     vendor.mediatek.hardware.bluetooth.audio-impl \
     vintf-codecsolution-V2-ndk \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
+    android.hardware.power-service-mediatek \
     camera.device@1.0-impl \
     camera.device@3.5-impl \
     camera.mt6835 \
     gps.default \
     hwcomposer.mtk_common \
     libsecaudiohal_aidl \
-    camera.mt6835 \
-    vendor.mediatek.hardware.camera.ccap@1.0-impl \
-    vendor.mediatek.hardware.camera.isphal@1.0-impl \
-    vendor.mediatek.hardware.camera.isphal@1.1-impl \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
@@ -1711,175 +1642,12 @@ PRODUCT_PACKAGES += \
     libvpu \
     libwifi-hal \
     libz_stable \
-    lib3a.ae.stat \
-    lib3a.af.assist \
-    lib3a.af.assist.utils \
-    lib3a.af.core \
-    lib3a.af \
-    lib3a.alsflicker \
-    lib3a.ccudrv \
-    lib3a.ccuif \
-    lib3a.custom.ae \
-    lib3a.dce \
-    lib3a.flash \
-    lib3a.flicker \
-    lib3a.gma \
-    lib3a.lce \
-    lib3a.n3d3a \
-    lib3a.sensors.color \
-    lib3a.sensors.flicker \
-    libSonyIMX230PdafLibrary \
-    libSonyIMX230PdafLibraryWrapper \
-    libSonyIMX338PdafLibrary \
-    libSonyIMX338PdafLibraryWrapper \
-    libSonyIMX386PdafLibrary \
-    libSonyIMX386PdafLibraryWrapper \
-    libSonyIMX519PdafLibrary \
-    libSonyIMX519PdafLibraryWrapper \
-    libaaa_ltm \
-    libaaa_ltmx \
-    libacdk \
-    libaiawb_moon \
-    libaiawb_p1ggm \
-    libaiawb_sun \
-    libaibc_tuning \
-    libaibc_tuning_p2 \
-    libaibc_tuning_p3 \
-    libaibc_tuning_p4 \
-    libaidepth_tuning \
-    libcam.afhal \
-    libcam.chdr \
-    libcam.feature_utils \
-    libcam.hal3a.cctsvr \
-    libcam.hal3a.v3.ae \
-    libcam.hal3a.v3.ai3a \
-    libcam.hal3a.v3.awb \
-    libcam.hal3a.v3.dng \
-    libcam.hal3a.v3.fsmgr \
-    libcam.hal3a.v3.lscMgr \
-    libcam.hal3a.v3.lsctbl.50 \
-    libcam.hal3a.v3.nvram.50 \
-    libcam.hal3a.v3.platform \
-    libcam.hal3a.v3.resultpool \
-    libcam.hal3a.v3 \
-    libcam.halisp.buf \
-    libcam.halisp.common \
-    libcam.halisp \
-    libcam.halsensor \
-    libcam.iopipe \
-    libcam.isptuning \
-    libcam.pdtblgen \
-    libcam.tuning.cache \
-    libcam.utils.sensorprovider \
-    libcam.vhdr \
-    libcamalgo.eis \
-    libcamalgo.fsc \
-    libcamalgo.gyro \
-    libcamalgo.ispfeature \
-    libcamalgo.lmv \
-    libcamalgo.lsc \
-    libcamalgo.n3d \
-    libcamalgo.rotate \
-    libcamalgo.vsf \
-    libcamdrv_isp \
-    libcamdrv_tuning_mgr \
-    libcamdrv_twin \
-    libcamera.custom.pd_buf_mgr \
-    libcamera.customae \
-    libcamera.customaf \
-    libcamera.customawb \
-    libcamera.customflk \
-    libcameracustom.camera.3a \
-    libcameracustom.camera.isp \
-    libcameracustom.camera.sensors \
-    libcameracustom.camera_exif \
-    libcameracustom.eis \
-    libcameracustom.flashlight \
-    libcameracustom.plugin \
-    libdip_drv \
-    libdip_postproc \
-    libeffecthal.base \
-    libfeature.face \
-    libfeature.stereo.provider \
-    libfeature.vsdof.hal \
-    libfeature_3dnr \
-    libfeature_eis \
-    libfeature_fsc \
-    libfeature_lmv \
-    libfeature_rss \
-    libfeatureiodrv_mem \
-    libimageio \
-    libimageio_plat_drv \
-    libimageio_plat_pipe \
-    liblpcnr \
-    libmsnr \
-    libmtkcam.debugwrapper \
-    libmtkcam.eventcallback \
-    libmtkcam.featurepipe.capture \
-    libmtkcam.featurepipe.depthmap \
-    libmtkcam.featurepipe.streaming \
-    libmtkcam.featurepipe.vsdof_util \
-    libmtkcam.logicalmodule \
-    libmtkcam_3rdparty.core \
-    libmtkcam_3rdparty.customer \
-    libmtkcam_3rdparty.mtk \
-    libmtkcam_3rdparty \
-    libmtkcam_calibration_convertor \
-    libmtkcam_calibration_provider \
-    libmtkcam_device3_app \
-    libmtkcam_device3_hal \
-    libmtkcam_device3_hidl \
-    libmtkcam_device3_hidlutils \
-    libmtkcam_device3_legacy \
-    libmtkcam_device3_utils \
-    libmtkcam_devicesessionpolicy \
-    libmtkcam_diputils \
-    libmtkcam_exif \
-    libmtkcam_fdvt \
-    libmtkcam_featurepolicy \
-    libmtkcam_featureutils \
-    libmtkcam_fwkutils \
-    libmtkcam_hwnode \
-    libmtkcam_hwutils \
-    libmtkcam_imem \
-    libmtkcam_imgbuf \
-    libmtkcam_mapping_mgr \
-    libmtkcam_metastore \
-    libmtkcam_mfb \
-    libmtkcam_modulefactory_aaa \
-    libmtkcam_modulefactory_custom \
-    libmtkcam_modulefactory_drv \
-    libmtkcam_modulefactory_utils \
-    libmtkcam_owe \
-    libmtkcam_pipeline \
-    libmtkcam_pipeline_fbm \
-    libmtkcam_pipelinemodel \
-    libmtkcam_pipelinemodel_adapter \
-    libmtkcam_pipelinemodel_capture \
-    libmtkcam_pipelinemodel_isp \
-    libmtkcam_pipelinemodel_session \
-    libmtkcam_pipelinemodel_utils \
-    libmtkcam_pipelinemodel_zsl \
-    libmtkcam_pipelinepolicy-security \
-    libmtkcam_pipelinepolicy-smvr \
-    libmtkcam_pipelinepolicy \
-    libmtkcam_pipelinepolicy_factory \
-    libmtkcam_prerelease \
-    libmtkcam_rsc \
-    libmtkcam_scenariorecorder \
-    libmtkcam_streamutils \
-    libmtkcam_synchelper \
-    libneuron_runtime.6 \
-    libstereoinfoaccessor_vsdof \
-    libvainr_model \
-    libmtkcam_streaminfo_plugin-p1stt \
     libmtkcam_streaminfo_plugin-p1stt \
     nfc_nci_nxpsn \
     vendor.mediatek.hardware.aee@1.0 \
     vendor.mediatek.hardware.aee@1.1 \
     vendor.mediatek.hardware.apuware.apusys-V1-ndk \
     vendor.mediatek.hardware.camera.ccap@1.0 \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
     vendor.mediatek.hardware.camera.isphal@1.1 \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
     vendor.mediatek.hardware.clientapi@1.0 \
@@ -1935,22 +1703,9 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.wifi@2.1 \
     vendor.samsung.hardware.wifi@2.2 \
     vendor.samsung.hardware.wifi@2.3 \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
     vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
-    vendor.mediatek.hardware.composer_ext@1.0 \
     com.samsung.android.authfw.ta.preload \
     com.samsung.android.biometrics.face.signed \
     com.samsung.android.biometrics.fingerprint.signed \
@@ -2065,7 +1820,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     macloader \
     mfgloader \
-    android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
     nxp.android.hardware.nfc@1.2-service \
     rild \
     samsung.software.media.c2@1.0-service \
@@ -2108,8 +1862,6 @@ PRODUCT_PACKAGES += \
     mnld \
     mrdump_tool \
     mt6660_calibration \
-    dumpfaultd.mt6835 \
-    jpegtool \
     mtk_agpsd \
     mtk_pkm_service \
     mtkconverter \
