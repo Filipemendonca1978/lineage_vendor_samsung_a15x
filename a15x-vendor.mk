@@ -1693,7 +1693,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service.coral.xml \
     android.hardware.wifi@1.0-service.xml \
     deviceManifest.xml \
-    dumpstate-default.xml \
     face-default-sec.xml \
     hyper-default-sec.xml \
     iweaver_v1_manifest.xml \
