@@ -8,26 +8,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "graphicbuffersource-aidl-ndk",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary//lib/graphicbuffersource-aidl-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libnativewindow", "android.hardware.graphics.common-V5-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary//lib64/graphicbuffersource-aidl-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libnativewindow", "android.hardware.graphics.common-V5-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdatasource",
 	owner: "samsung",
 	strip: {
@@ -161,26 +141,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary//lib64/libstagefright_framecapture_utils.so"],
 			shared_libs: ["libbase", "libcutils", "libEGL", "libGLESv1_CM", "libGLESv2", "libvulkan", "libgui", "liblog", "libomafldrm", "libprocessgroup", "libstagefright_foundation", "libsync", "libui", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstagefright_graphicbuffersource_aidl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary//lib/libstagefright_graphicbuffersource_aidl.so"],
-			shared_libs: ["android.hardware.graphics.common-V5-ndk", "graphicbuffersource-aidl-ndk", "libbinder_ndk", "libcutils", "libgui", "liblog", "libnativewindow", "libstagefright_bufferqueue_helper", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary//lib64/libstagefright_graphicbuffersource_aidl.so"],
-			shared_libs: ["android.hardware.graphics.common-V5-ndk", "graphicbuffersource-aidl-ndk", "libbinder_ndk", "libcutils", "libgui", "liblog", "libnativewindow", "libstagefright_bufferqueue_helper", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -347,27 +307,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/arm.mali.platform-V1-ndk.so"],
 			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "audiopolicy-types-aidl-cpp",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/audiopolicy-types-aidl-cpp.so"],
-			shared_libs: ["libbinder", "libutils", "android.media.audio.common.types-V1-cpp", "audioclient-types-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/audiopolicy-types-aidl-cpp.so"],
-			shared_libs: ["libbinder", "libutils", "android.media.audio.common.types-V1-cpp", "audioclient-types-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -907,28 +846,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so"],
 			shared_libs: ["libc", "liblog", "libhardware", "libbase", "libcutils", "libutils", "libhidlbase", "android.hardware.thermal@1.0", "android.hardware.thermal@2.0", "libc++", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "audio.bluetooth.default",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio.bluetooth.default.so"],
-			shared_libs: ["vendor.samsung.hardware.bluetooth.audio-V1-ndk", "libsehbluetooth_audio_session_aidl", "libaudioutils", "libbase", "libbinder_ndk", "libcutils", "libfmq", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio.bluetooth.default.so"],
-			shared_libs: ["vendor.samsung.hardware.bluetooth.audio-V1-ndk", "libsehbluetooth_audio_session_aidl", "libaudioutils", "libbase", "libbinder_ndk", "libcutils", "libfmq", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -8060,27 +7977,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libbluetooth_audio_session_aidl",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libbluetooth_audio_session_aidl.so"],
-			shared_libs: ["android.hardware.bluetooth.audio@2.0", "android.hardware.bluetooth.audio@2.1", "libbase", "libcutils", "libbinder_ndk", "libfmq", "liblog", "android.hardware.bluetooth.audio-V2-ndk", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so"],
-			shared_libs: ["android.hardware.bluetooth.audio@2.0", "android.hardware.bluetooth.audio@2.1", "libbase", "libcutils", "libbinder_ndk", "libfmq", "liblog", "android.hardware.bluetooth.audio-V2-ndk", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libbluetooth_audio_session_mediatek",
 	owner: "samsung",
 	strip: {
@@ -14233,11 +14129,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "android.hardware.graphics.common-V3-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "android.hardware.graphics.common-V6-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "android.hardware.graphics.common-V3-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "android.hardware.graphics.common-V6-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -14485,7 +14381,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/android.hardware.bluetooth.audio-impl.so"],
-			shared_libs: ["libbase", "libbinder_ndk", "libcutils", "libfmq", "liblog", "android.hardware.bluetooth.audio-V2-ndk", "libbluetooth_audio_session_aidl", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libbinder_ndk", "libcutils", "libfmq", "liblog", "android.hardware.bluetooth.audio-V5-ndk", "libbluetooth_audio_session_aidl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -17197,7 +17093,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcodec2_vpp_AIMEMC_plugin.so"],
-			shared_libs: ["libcodec2", "libcodec2_soft_common", "libcodec2_vndk", "libgralloc_extra", "libnativewindow", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libui", "libEGL", "libGLESv2", "android.hardware.graphics.allocator-V1-ndk", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.common-V3-ndk", "android.hardware.graphics.common@1.2", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libgralloctypes", "libhidlbase", "libbase", "libcutils", "liblog", "libutils", "libhardware", "libneuron_runtime.6", "libsync", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcodec2", "libcodec2_soft_common", "libcodec2_vndk", "libgralloc_extra", "libnativewindow", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libui", "libEGL", "libGLESv2", "android.hardware.graphics.allocator-V2-ndk", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.common-V6-ndk", "android.hardware.graphics.common@1.2", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libgralloctypes", "libhidlbase", "libbase", "libcutils", "liblog", "libutils", "libhardware", "libneuron_runtime.6", "libsync", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -17214,7 +17110,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcodec2_vpp_AISR_plugin.so"],
-			shared_libs: ["libcodec2", "libcodec2_soft_common", "libcodec2_vndk", "libcutils", "libgralloc_extra", "libnativewindow", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libui", "libEGL", "libGLESv2", "android.hardware.graphics.allocator-V1-ndk", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.common-V3-ndk", "android.hardware.graphics.common@1.2", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libgralloctypes", "libhidlbase", "libbase", "libhardware", "liblog", "libneuron_runtime.6", "libsync", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcodec2", "libcodec2_soft_common", "libcodec2_vndk", "libcutils", "libgralloc_extra", "libnativewindow", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libui", "libEGL", "libGLESv2", "android.hardware.graphics.allocator-V2-ndk", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.common-V6-ndk", "android.hardware.graphics.common@1.2", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "libgralloctypes", "libhidlbase", "libbase", "libhardware", "liblog", "libneuron_runtime.6", "libsync", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21888,41 +21784,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "hostapd_cli",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hostapd_cli"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.audio.service.mediatek",
-	owner: "samsung",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek"],
-			shared_libs: ["libaudiofoundation", "libcutils", "libbinder", "libbinder_ndk", "libhidlbase", "libhidltransport", "liblog", "libutils", "libhardware", "libhwbinder", "android.hardware.audio@6.0", "android.hardware.audio@7.0", "android.hardware.audio@7.1", "android.hardware.audio.common@6.0", "android.hardware.audio.common@7.0", "android.hardware.audio.effect@6.0", "android.hardware.audio.effect@7.0", "vendor.mediatek.hardware.bluetooth.audio@2.1", "android.hardware.soundtrigger@2.3", "vendor.mediatek.hardware.audio@6.1", "vendor.mediatek.hardware.audio@7.1", "vendor.mediatek.hardware.audio@8.1", "vendor.mediatek.hardware.bluetooth.audio@2.2", "vendor.mediatek.hardware.bluetooth.audio-impl", "android.hardware.bluetooth.audio-impl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.bluetooth@1.1-service-mediatek",
 	owner: "samsung",
 	target: {
@@ -22229,24 +22090,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.security.keymint-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.security.keymint-service"],
-			shared_libs: ["libskeymint10device", "vendor.samsung.hardware.keymint-V2-ndk", "android.hardware.security.keymint-V2-ndk", "android.hardware.security.sharedsecret-V1-ndk", "android.hardware.security.secureclock-V1-ndk", "libbase", "libbinder_ndk", "libcppbor_external", "libcrypto", "libkeymaster_portable", "liblog", "libpuresoftkeymasterdevice", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.sensors@2.0-service.multihal",
 	owner: "samsung",
 	target: {
@@ -22289,24 +22132,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy"],
 			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libnl", "libutils", "libwifi-hal", "libwifi-system-iface", "libxml2", "android.hardware.wifi@1.0", "android.hardware.wifi@1.1", "android.hardware.wifi@1.2", "android.hardware.wifi@1.3", "android.hardware.wifi@1.4", "android.hardware.wifi@1.5", "android.hardware.wifi@1.6", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "hostapd",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/hostapd"],
-			shared_libs: ["libcutils", "liblog", "libcrypto", "libssl", "libnl", "android.hardware.wifi.hostapd-V1-ndk", "libbase", "libutils", "libbinder_ndk", "vendor.samsung.hardware.wifi.hostapd-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -22919,24 +22744,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service"],
 			shared_libs: ["libbase", "libcutils", "libhidlbase", "libhidltransport", "liblog", "libnl", "libutils", "libwifi-hal", "libwifi-system-iface", "libz", "android.hardware.wifi@1.0", "android.hardware.wifi@1.1", "android.hardware.wifi@1.2", "android.hardware.wifi@1.3", "android.hardware.wifi@1.4", "vendor.samsung.hardware.wifi@2.0", "vendor.samsung.hardware.wifi@2.1", "vendor.samsung.hardware.wifi@2.2", "vendor.samsung.hardware.wifi@2.3", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "wpa_supplicant",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/wpa_supplicant"],
-			shared_libs: ["libcutils", "liblog", "libcrypto", "libssl", "libkeystore-wifi-hidl", "libkeystore-engine-wifi-hidl", "libnl", "android.hardware.wifi.supplicant-V1-ndk", "vendor.samsung.hardware.wifi.supplicant-V1-ndk", "libutils", "libbase", "libbinder_ndk", "libsecnativefeature", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -23735,23 +23542,6 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/wmt_loader"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "wpa_cli",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/wpa_cli"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},

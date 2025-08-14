@@ -225,7 +225,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
     vendor/samsung/a15x/proprietary/vendor/etc/init.insmod.mt6835.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6835.cfg \
     vendor/samsung/a15x/proprietary/vendor/etc/init/aee_aedv64_v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64_v2.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service-lazy.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
@@ -241,7 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.security.keymint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service-multihal.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.usb@1.3-service.coral.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.3-service.coral.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
@@ -646,7 +644,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
-    graphicbuffersource-aidl-ndk \
     libdatasource \
     libdatasource_local_cache \
     libmedia_codeclist \
@@ -654,7 +651,6 @@ PRODUCT_PACKAGES += \
     libstagefright_aidl_bufferpool2 \
     libstagefright_codecbase \
     libstagefright_framecapture_utils \
-    libstagefright_graphicbuffersource_aidl \
     libstagefright_httplive_sec \
     libstagefright_surface_utils \
     libarcsoft_photoeditor.arcsoft \
@@ -664,7 +660,6 @@ PRODUCT_PACKAGES += \
     arm.graphics-V2-ndk \
     arm.graphics-V3-ndk \
     arm.mali.platform-V1-ndk \
-    audiopolicy-types-aidl-cpp \
     camera.device@3.2-impl \
     camera.device@3.3-impl \
     camera.device@3.4-impl \
@@ -690,7 +685,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@2.0-impl \
-    audio.bluetooth.default \
     audio.primary.mediatek \
     audio.primary.mt6835 \
     audio.r_submix.mediatek \
@@ -1029,7 +1023,6 @@ PRODUCT_PACKAGES += \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
@@ -1794,8 +1787,6 @@ PRODUCT_PACKAGES += \
     gbe \
     gps_dump \
     hermesd \
-    hostapd_cli \
-    android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.cas@1.2-service-lazy \
     android.hardware.drm-service.clearkey \
@@ -1813,11 +1804,9 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.neuralnetworks-shim-service-mtk-lazy \
-    android.hardware.security.keymint-service \
     android.hardware.sensors@2.0-service.multihal \
     android.hardware.usb@1.3-service.coral \
     android.hardware.wifi@1.0-service-lazy \
-    hostapd \
     macloader \
     mfgloader \
     nxp.android.hardware.nfc@1.2-service \
@@ -1852,7 +1841,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.payment@1.0-service \
     vendor.samsung.hardware.vibrator-service \
     vendor.samsung.hardware.wifi@2.0-service \
-    wpa_supplicant \
     iod \
     ipsec_mon \
     jpegtool \
@@ -1901,5 +1889,4 @@ PRODUCT_PACKAGES += \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \
-    wpa_cli \
     wvkprov
