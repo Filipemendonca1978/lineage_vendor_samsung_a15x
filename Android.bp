@@ -20613,15 +20613,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "bluetooth_audio.xml",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "deviceManifest.xml",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/deviceManifest.xml",
@@ -21070,40 +21061,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/bip_ap"],
 			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "boringssl_self_test32",
-	owner: "samsung",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/boringssl_self_test32"],
-			shared_libs: ["libcrypto", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "boringssl_self_test64",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/boringssl_self_test64"],
-			shared_libs: ["libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

@@ -1700,7 +1700,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd.xml \
     android.hardware.wifi.supplicant.xml \
     android.hardware.wifi@1.0-service.xml \
-    bluetooth_audio.xml \
     deviceManifest.xml \
     dumpstate-default.xml \
     face-default-sec.xml \
@@ -1745,8 +1744,6 @@ PRODUCT_PACKAGES += \
     audiocmdservice_atci \
     autobt \
     bip_ap \
-    boringssl_self_test32 \
-    boringssl_self_test64 \
     bt_dump \
     camera_tilt_calibration_info_1_2_default.bin \
     cass \
