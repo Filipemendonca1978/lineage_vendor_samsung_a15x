@@ -12282,18 +12282,18 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libuuid",
+	name: "libuuid_vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libuuid.so"],
+			srcs: ["proprietary/vendor/lib/libuuid_vendor.so"],
 			shared_libs: ["liblog", "libdl", "libc", ],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libuuid.so"],
+			srcs: ["proprietary/vendor/lib64/libuuid_vendor.so"],
 			shared_libs: ["liblog", "libdl", "libc", ],
 		},
 	},
@@ -23228,7 +23228,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/tzdaemon"],
-			shared_libs: ["libteecl", "libuuid", "liblog", "libdl", "libc", ],
+			shared_libs: ["libteecl", "libuuid_vendor", "liblog", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",
@@ -23245,7 +23245,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/tzts_daemon"],
-			shared_libs: ["libteecl", "libuuid", "liblog", "libdl", "libc", ],
+			shared_libs: ["libteecl", "libuuid_vendor", "liblog", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",

@@ -1228,7 +1228,7 @@ PRODUCT_PACKAGES += \
     libtranslator_utils \
     libudf \
     liburee_meta_drmkeyinstall \
-    libuuid \
+    libuuid_vendor \
     libvcodec_oal \
     libvcodecdrv_header_stub \
     libvdis.uniplugin@1.0 \
