@@ -4,6 +4,7 @@
 
 soong_namespace {
 	imports: [
+        "device/samsung/a15x",
 	],
 }
 
@@ -6390,7 +6391,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libFace_Landmark_API.camera.samsung.so"],
-			shared_libs: ["libmpbase", "libc++", "libcutils", "liblog", "libc", "libdl", ],
+			shared_libs: ["libshim_idiv0", "libmpbase", "libc++", "libcutils", "liblog", "libc", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libFace_Landmark_API.camera.samsung.so"],
@@ -6474,7 +6475,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so"],
-			shared_libs: ["libdl", "libc++", "liblog", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libdl", "libc++", "liblog", "libc", "libm", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so"],
@@ -6663,7 +6664,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libSQLiteModule_VER_ALL.so"],
-			shared_libs: ["libdl", "liblog", "libm", "libc", ],
+			shared_libs: ["libshim_idiv0", "libdl", "liblog", "libm", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so"],
@@ -6705,7 +6706,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/lib_SamsungRec_07010.so"],
-			shared_libs: ["libc", "libm", "libdl", "liblog", ],
+			shared_libs: ["libshim_idiv0", "libc", "libm", "libdl", "liblog", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lib_SamsungRec_07010.so"],
@@ -6768,7 +6769,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/lib_SoundAlive_play_plus_ver600.so"],
-			shared_libs: ["libc", "libm", "libdl", "liblog", ],
+			shared_libs: ["libshim_idiv0", "libc", "libm", "libdl", "liblog", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lib_SoundAlive_play_plus_ver600.so"],
@@ -6789,7 +6790,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/lib_SoundBooster_ver2000.so"],
-			shared_libs: ["libc", "libm", "libdl", "liblog", ],
+			shared_libs: ["libshim_idiv0", "libc", "libm", "libdl", "liblog", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lib_SoundBooster_ver2000.so"],
@@ -8364,7 +8365,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libegis_fp_normal_sensor_test.so"],
-			shared_libs: ["liblog", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "liblog", "libc", "libm", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so"],
@@ -10191,7 +10192,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmvpuop_mtk_cv.so"],
-			shared_libs: ["libdl", "liblog", "libm", "libc", ],
+			shared_libs: ["libshim_idiv0", "libdl", "liblog", "libm", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmvpuop_mtk_cv.so"],
@@ -10212,7 +10213,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmvpuop_mtk_nn.so"],
-			shared_libs: ["libdl", "liblog", "libm", "libc", ],
+			shared_libs: ["libshim_idiv0", "libdl", "liblog", "libm", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmvpuop_mtk_nn.so"],
