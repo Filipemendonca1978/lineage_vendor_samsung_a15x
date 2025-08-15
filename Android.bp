@@ -13793,7 +13793,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libh264enc_sa.ca7.so"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libvcodec_oal", "libvcodec_utility", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "libutils", "liblog", "libvcodec_oal", "libvcodec_utility", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13827,7 +13827,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmp4enc_sa.ca7.so"],
-			shared_libs: ["libcutils", "liblog", "libvcodec_oal", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "liblog", "libvcodec_oal", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13844,7 +13844,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libmp4enc_xa.ca7.so"],
-			shared_libs: ["libcutils", "liblog", "libvcodec_utility", "libvcodec_oal", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "liblog", "libvcodec_utility", "libvcodec_oal", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13963,7 +13963,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvp8dec_sa.ca7.so"],
-			shared_libs: ["liblog", "libvcodec_oal", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "liblog", "libvcodec_oal", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13997,7 +13997,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvp9dec_sa.ca7.so"],
-			shared_libs: ["libcutils", "liblog", "libvcodec_oal", "libpowerhalwrap_vendor", "libthha", "libc++", "libdl", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "liblog", "libvcodec_oal", "libpowerhalwrap_vendor", "libthha", "libc++", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -20612,7 +20612,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/factory"],
-			shared_libs: ["libbase_shim", "libcutils", "libnvram", "libfile_op", "libminiui", "libjpeg", "libbase", "libfft_vendor", "libaudio_param_parser-vnd", "libxml2", "libselinux", "libalsautils", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinycompress", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "vendor.mediatek.hardware.bluetooth.audio@2.1", "libhfmanagerwrapper", "liblog", "libutils", "android.system.suspend@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "android.hardware.health-V1-ndk", "android.hardware.light-V1-ndk", "libbinder_ndk", "libbinder", "android.hardware.light@2.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase_shim", "libcutils", "libnvram", "libfile_op", "libminui", "libjpeg", "libbase", "libfft_vendor", "libaudio_param_parser-vnd", "libxml2", "libselinux", "libalsautils", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinycompress", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "vendor.mediatek.hardware.bluetooth.audio@2.1", "libhfmanagerwrapper", "liblog", "libutils", "android.system.suspend@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "android.hardware.health-V1-ndk", "android.hardware.light-V1-ndk", "libbinder_ndk", "libbinder", "android.hardware.light@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
