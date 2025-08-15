@@ -14375,7 +14375,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lib3a.ae.stat.so"],
-			shared_libs: ["libdl", "libm", "libc", ],
+			shared_libs: ["liblog", "libdl", "libm", "libc", ],
 		},
 	},
 	compile_multilib: "64",
