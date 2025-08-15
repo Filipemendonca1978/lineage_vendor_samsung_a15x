@@ -512,8 +512,6 @@ PRODUCT_PACKAGES += \
     gnss_aidl_lib \
     hi5022q_mipi_raw_IdxMgr \
     hi5022q_mipi_raw_tuning \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
@@ -855,7 +853,6 @@ PRODUCT_PACKAGES += \
     libbeautyshot.arcsoft \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
-    libbluetooth_audio_session \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
@@ -1141,7 +1138,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.hyper-V2-ndk \
     vendor.samsung.hardware.tlc.payment@1.0-impl \
     vendor.samsung.hardware.tlc.payment@1.0 \
-    android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.0-impl \
     libFrucSSMLib \
     libHEVCdec_sa.ca7.android \
@@ -1173,6 +1169,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-mediatek \
     camera.device@1.0-impl \
     camera.device@3.5-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
     camera.mt6835 \
     gps.default \
     hwcomposer.mtk_common \
