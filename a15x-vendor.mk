@@ -1298,6 +1298,7 @@ PRODUCT_PACKAGES += \
     libcodec2_vpp_AIMEMC_plugin \
     libcodec2_vpp_AISR_plugin \
     libcomposer_ext \
+    libcrypto-tm \
     libdeccfg \
     libdip_drv \
     libdip_postproc \
