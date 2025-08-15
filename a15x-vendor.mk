@@ -219,6 +219,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
     vendor/samsung/a15x/proprietary/vendor/etc/init.insmod.mt6835.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6835.cfg \
     vendor/samsung/a15x/proprietary/vendor/etc/init/aee_aedv64_v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64_v2.rc \
+    vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -1579,6 +1580,7 @@ PRODUCT_PACKAGES += \
     gbe \
     gps_dump \
     hermesd \
+    android.hardware.audio.service.mediatek \
     android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm-service.widevine \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6835 \
