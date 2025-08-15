@@ -496,9 +496,6 @@ PRODUCT_PACKAGES += \
     arm.graphics-V2-ndk \
     arm.graphics-V3-ndk \
     arm.mali.platform-V1-ndk \
-    camera.device@3.2-impl \
-    camera.device@3.3-impl \
-    camera.device@3.4-impl \
     libGLES_mali \
     libGLES_meow \
     libMEOW_data \
@@ -865,7 +862,6 @@ PRODUCT_PACKAGES += \
     libcam.halsensor.hwintegration \
     libcamalgo.platform2 \
     libcamalgo.utility \
-    libcamera2ndk_vendor \
     libcameracustom.lens \
     libcameracustom \
     libcares_naptr \
@@ -1167,8 +1163,6 @@ PRODUCT_PACKAGES += \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
     android.hardware.power-service-mediatek \
-    camera.device@1.0-impl \
-    camera.device@3.5-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     camera.mt6835 \
