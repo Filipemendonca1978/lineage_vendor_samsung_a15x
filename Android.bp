@@ -1097,7 +1097,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/lib3a.ae.so"],
-			shared_libs: ["libdl", "liblog", "libSQLiteModule_VER_ALL", "libm", "libc", ],
+			shared_libs: ["libshim_idiv0", "libdl", "liblog", "libSQLiteModule_VER_ALL", "libm", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lib3a.ae.so"],
@@ -1118,7 +1118,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/lib3a.awb.core.so"],
-			shared_libs: ["libdl", "liblog", "libSQLiteModule_VER_ALL", "libm", "libc", ],
+			shared_libs: ["libshim_idiv0", "libdl", "liblog", "libSQLiteModule_VER_ALL", "libm", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/lib3a.awb.core.so"],
@@ -8426,7 +8426,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libfocuspeaking.so"],
-			shared_libs: ["libc++", "libsavscmn", "liblog", "libc", ],
+			shared_libs: ["libshim_idiv0", "libc++", "libsavscmn", "liblog", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libfocuspeaking.so"],
@@ -11450,7 +11450,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libsynaFpSensorTestNwd.so"],
-			shared_libs: ["liblog", "libdl", "libc", ],
+			shared_libs: ["libshim_idiv0", "liblog", "libdl", "libc", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsynaFpSensorTestNwd.so"],
@@ -13657,7 +13657,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so"],
-			shared_libs: ["libvcodec_oal", "libpowerhalwrap_vendor", "libthha", "liblog", "libutils", "libcutils", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libvcodec_oal", "libpowerhalwrap_vendor", "libthha", "liblog", "libutils", "libcutils", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13742,7 +13742,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libh264dec_sa.ca7.so"],
-			shared_libs: ["libcutils", "libvcodec_utility", "libvcodec_oal", "libh264dec_customize", "liblog", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "libvcodec_utility", "libvcodec_oal", "libh264dec_customize", "liblog", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13759,7 +13759,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libh264dec_sd.ca7.so"],
-			shared_libs: ["libcutils", "libvcodec_utility", "libvcodec_oal", "libh264dec_customize", "liblog", "libpowerhalwrap_vendor", "libthha", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "libvcodec_utility", "libvcodec_oal", "libh264dec_customize", "liblog", "libpowerhalwrap_vendor", "libthha", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13776,7 +13776,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libh264dec_se.ca7.so"],
-			shared_libs: ["libcutils", "libvcodec_utility", "libvcodec_oal", "libh264dec_customize", "liblog", "libpowerhalwrap_vendor", "libthha", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "libcutils", "libvcodec_utility", "libvcodec_oal", "libh264dec_customize", "liblog", "libpowerhalwrap_vendor", "libthha", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
@@ -13980,7 +13980,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvp8enc_sa.ca7.so"],
-			shared_libs: ["liblog", "libvcodec_oal", "libc", "libm", ],
+			shared_libs: ["libshim_idiv0", "liblog", "libvcodec_oal", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "32",
