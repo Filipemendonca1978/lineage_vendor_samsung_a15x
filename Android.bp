@@ -737,28 +737,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "audio_policy.stub",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/audio_policy.stub.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/audio_policy.stub.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "camera.unihal.default",
 	owner: "samsung",
 	strip: {
@@ -904,28 +882,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/sound_trigger.primary.default.so"],
 			shared_libs: ["libcutils", "liblog", "libutils", "libhardware_legacy", "libhardware", "libmedia_helper", "libhidlbase", "vendor.mediatek.hardware.mtkpower@1.0", "libaedv", "libxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "thermal_hal",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/hw/thermal_hal.so"],
-			shared_libs: ["liblog", "libcutils", "libhardware", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/thermal_hal.so"],
-			shared_libs: ["liblog", "libcutils", "libhardware", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -7056,27 +7012,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libalsautils",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libalsautils.so"],
-			shared_libs: ["liblog", "libcutils", "libaudioutils", "libtinyalsa", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libalsautils.so"],
-			shared_libs: ["liblog", "libcutils", "libaudioutils", "libtinyalsa", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libapmonitor_vendor",
 	owner: "samsung",
 	strip: {
@@ -8148,69 +8083,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcodec2_hidl@1.1",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_hidl@1.1.so"],
-			shared_libs: ["android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "android.hardware.graphics.common@1.0", "android.hardware.media@1.0", "android.hardware.media.bufferpool@2.0", "android.hardware.media.c2@1.0", "android.hardware.media.c2@1.1", "android.hardware.media.omx@1.0", "libbase", "libcodec2", "libcodec2_hidl@1.0", "libcodec2_vndk", "libcutils", "libhidlbase", "liblog", "libstagefright_bufferpool@2.0.1", "libui", "libutils", "libstagefright_bufferqueue_helper", "libcodec2_hidl_plugin", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.1.so"],
-			shared_libs: ["android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "android.hardware.graphics.common@1.0", "android.hardware.media@1.0", "android.hardware.media.bufferpool@2.0", "android.hardware.media.c2@1.0", "android.hardware.media.c2@1.1", "android.hardware.media.omx@1.0", "libbase", "libcodec2", "libcodec2_hidl@1.0", "libcodec2_vndk", "libcutils", "libhidlbase", "liblog", "libstagefright_bufferpool@2.0.1", "libui", "libutils", "libstagefright_bufferqueue_helper", "libcodec2_hidl_plugin", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcodec2_hidl@1.2",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_hidl@1.2.so"],
-			shared_libs: ["android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "android.hardware.graphics.common@1.0", "android.hardware.media@1.0", "android.hardware.media.bufferpool@2.0", "android.hardware.media.c2@1.0", "android.hardware.media.c2@1.1", "android.hardware.media.c2@1.2", "android.hardware.media.omx@1.0", "libbase", "libcodec2", "libcodec2_hidl@1.0", "libcodec2_hidl@1.1", "libcodec2_vndk", "libcutils", "libhidlbase", "liblog", "libstagefright_bufferpool@2.0.1", "libui", "libutils", "libstagefright_bufferqueue_helper", "libcodec2_hidl_plugin", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcodec2_hidl@1.2.so"],
-			shared_libs: ["android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "android.hardware.graphics.common@1.0", "android.hardware.media@1.0", "android.hardware.media.bufferpool@2.0", "android.hardware.media.c2@1.0", "android.hardware.media.c2@1.1", "android.hardware.media.c2@1.2", "android.hardware.media.omx@1.0", "libbase", "libcodec2", "libcodec2_hidl@1.0", "libcodec2_hidl@1.1", "libcodec2_vndk", "libcutils", "libhidlbase", "liblog", "libstagefright_bufferpool@2.0.1", "libui", "libutils", "libstagefright_bufferqueue_helper", "libcodec2_hidl_plugin", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcodec2_hidl_plugin",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_hidl_plugin.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcodec2_hidl_plugin.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libcodec2_mtk_c2store",
 	owner: "samsung",
 	strip: {
@@ -8266,48 +8138,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcodec2_mtk_venc.so"],
 			shared_libs: ["libformatter", "libdpframework", "android.hardware.graphics.bufferqueue@2.0", "libui", "libgralloc_extra", "libexpat", "libsync", "libhidlbase", "libhwbinder", "libged", "libcamera2ndk_vendor", "libcodec2_soft_common", "libcutils", "liblog", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libbase", "libcodec2", "libcodec2_vndk", "libutils", "libion", "libdmabufheap", "libion_mtk", "libcodec2_mtk_c2store", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcodec2_simple_component",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_simple_component.so"],
-			shared_libs: ["libcodec2", "libcodec2_vndk", "libcutils", "liblog", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcodec2_simple_component.so"],
-			shared_libs: ["libcodec2", "libcodec2_vndk", "libcutils", "liblog", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcodec2_soft_common",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libcodec2_soft_common.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "libutils", "libcutils", "liblog", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcodec2_soft_common.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "libutils", "libcutils", "liblog", "libsfplugin_ccodec_utils", "libstagefright_foundation", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -8631,27 +8461,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libflatbuffers-cpp",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libflatbuffers-cpp.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libflatbuffers-cpp.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libfloatingfeature",
 	owner: "samsung",
 	strip: {
@@ -8938,27 +8747,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libgralloctypes_mtk.so"],
 			shared_libs: ["android.hardware.graphics.mapper@4.0", "libhidlbase", "libhardware", "libcutils", "libutils", "liblog", "libion", "libc", "libc++", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libgrallocusage",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libgrallocusage.so"],
-			shared_libs: ["android.hardware.graphics.allocator@2.0", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libgrallocusage.so"],
-			shared_libs: ["android.hardware.graphics.allocator@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -9505,27 +9293,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/liblivefocus_preview_engine.so"],
 			shared_libs: ["libmpbase", "libBeauty_v4.camera.samsung", "liblog", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libmediautils_vendor",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libmediautils_vendor.so"],
-			shared_libs: ["liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libmediautils_vendor.so"],
-			shared_libs: ["liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -11193,27 +10960,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libruy",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libruy.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libruy.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsavsac",
 	owner: "samsung",
 	strip: {
@@ -11529,69 +11275,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsfplugin_ccodec_utils",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libsfplugin_ccodec_utils.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "libcutils", "liblog", "libnativewindow", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsfplugin_ccodec_utils.so"],
-			shared_libs: ["libbase", "libcodec2", "libcodec2_vndk", "libcutils", "liblog", "libnativewindow", "libstagefright_foundation", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libshmemcompat",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libshmemcompat.so"],
-			shared_libs: ["libbinder", "libshmemutil", "libutils", "shared-file-region-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libshmemcompat.so"],
-			shared_libs: ["libbinder", "libshmemutil", "libutils", "shared-file-region-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libshmemutil",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libshmemutil.so"],
-			shared_libs: ["shared-file-region-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libshmemutil.so"],
-			shared_libs: ["shared-file-region-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsimlock",
 	owner: "samsung",
 	strip: {
@@ -11773,27 +11456,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libspeechparser_vendor.so"],
 			shared_libs: ["libcutils", "liblog", "libutils", "libaudioutils", "libmedia_helper", "libxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstagefright_bufferpool@2.0.1",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so"],
-			shared_libs: ["libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "android.hardware.media.bufferpool@2.0", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so"],
-			shared_libs: ["libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "android.hardware.media.bufferpool@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -12180,27 +11842,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libvibrator",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvibrator.so"],
-			shared_libs: ["libbinder", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libvibrator.so"],
-			shared_libs: ["libbinder", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvideobeauty.arcsoft",
 	owner: "samsung",
 	strip: {
@@ -12298,27 +11939,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwapi.so"],
 			shared_libs: ["libkeystore-wifi-hidl", "libcrypto", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libwpa_client",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libwpa_client.so"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libwpa_client.so"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -12688,27 +12308,6 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "both",
 	relative_install_path: "soundfx",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "spatializer-aidl-cpp",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/spatializer-aidl-cpp.so"],
-			shared_libs: ["libbinder", "libutils", "audiopolicy-types-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/spatializer-aidl-cpp.so"],
-			shared_libs: ["libbinder", "libutils", "audiopolicy-types-aidl-cpp", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -14386,23 +13985,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libstagefright_softomx_plugin",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstagefright_softomx_plugin.so"],
-			shared_libs: ["libstagefright_softomx", "libstagefright_foundation", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvcodec_utility",
 	owner: "samsung",
 	strip: {
@@ -14514,23 +14096,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvpud_vcodec.so"],
 			shared_libs: ["libcutils", "libvcodecdrv", "libvcodec_utility", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libvpx",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libvpx.so"],
-			shared_libs: ["libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -15593,23 +15158,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libarcsoft_MFNR.so"],
 			shared_libs: ["libmpbase", "liblog", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libbinderdebug",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libbinderdebug.so"],
-			shared_libs: ["libbase", "libbinder", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16842,40 +16390,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcppbor_external",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcppbor_external.so"],
-			shared_libs: ["libbase", "libcrypto", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcppcose_rkp",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libcppcose_rkp.so"],
-			shared_libs: ["libcppbor_external", "libcrypto", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdeccfg",
 	owner: "samsung",
 	strip: {
@@ -17565,23 +17079,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libisosechw.so"],
 			shared_libs: ["libhidlbase", "libhermes", "libc", "liblog", "libutils", "libcutils", "libc++", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libkeymaster4_1support",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libkeymaster4_1support.so"],
-			shared_libs: ["android.hardware.keymaster@3.0", "android.hardware.keymaster@4.0", "android.hardware.keymaster@4.1", "libbase", "libcrypto", "libhidlbase", "libkeymaster4support", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -19069,23 +18566,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsoft_attestation_cert",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsoft_attestation_cert.so"],
-			shared_libs: ["libkeymaster_portable", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsomxcmn",
 	owner: "samsung",
 	strip: {
@@ -19299,23 +18779,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwifi-hal.so"],
 			shared_libs: ["libbase", "libcutils", "liblog", "libnl", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libz_stable",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libz_stable.so"],
-			shared_libs: ["libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -20475,27 +19938,9 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.cas@1.2-service-lazy.xml",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.neuralnetworks-shim-service-mtk.xml",
 	owner: "samsung",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.sensors@2.0-multihal.xml",
-	owner: "samsung",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -20902,23 +20347,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "applypatch",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/applypatch"],
-			shared_libs: ["libbase", "libcrypto", "liblog", "libz_stable", "libziparchive", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "audiocmdservice_atci",
 	owner: "samsung",
 	target: {
@@ -21122,23 +20550,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "dmabuf_dump",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/dmabuf_dump"],
-			shared_libs: ["libbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "dmc_core",
 	owner: "samsung",
 	target: {
@@ -21190,46 +20601,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "dtc_vendor",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/dtc_vendor"],
-			shared_libs: ["libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "dumpfaultd.mt6835",
 	owner: "samsung",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/dumpfaultd.mt6835"],
 			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "dumpsys",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/dumpsys"],
-			shared_libs: ["libbase", "libutils", "liblog", "libbinder", "libbinderdebug", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21429,24 +20806,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.cas@1.2-service-lazy",
-	owner: "samsung",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.cas@1.2-service-lazy"],
-			shared_libs: ["android.hardware.cas@1.0", "android.hardware.cas@1.1", "android.hardware.cas@1.2", "android.hardware.cas.native@1.0", "android.hidl.memory@1.0", "libbinder", "libhidlbase", "libhidlmemory", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.drm-service.widevine",
 	owner: "samsung",
 	target: {
@@ -21465,120 +20824,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.dumpstate-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.dumpstate-service"],
-			shared_libs: ["libbase", "libbinder_ndk", "libcutils", "libdumpstateutil", "liblog", "libutils", "android.hardware.dumpstate-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.gatekeeper@1.0-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service"],
-			shared_libs: ["android.hardware.gatekeeper@1.0", "libhardware", "libhidlbase", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.graphics.allocator@4.0-service-mediatek.mt6835",
 	owner: "samsung",
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6835"],
 			shared_libs: ["android.hardware.graphics.allocator@4.0", "libhidlbase", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.graphics.composer@2.1-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service"],
-			shared_libs: ["android.hardware.graphics.composer@2.1", "android.hardware.graphics.composer@2.1-resources", "libbase", "libbinder", "libcutils", "libfmq", "libhardware", "libhidlbase", "libhwc2on1adapter", "libhwc2onfbadapter", "liblog", "libsync", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.graphics.composer@2.3-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.3-service"],
-			shared_libs: ["android.hardware.graphics.composer@2.1", "android.hardware.graphics.composer@2.2", "android.hardware.graphics.composer@2.3", "android.hardware.graphics.composer@2.1-resources", "android.hardware.graphics.composer@2.2-resources", "libbase", "libbinder", "libcutils", "libfmq", "libhardware", "libhidlbase", "libhwc2on1adapter", "libhwc2onfbadapter", "liblog", "libsync", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.graphics.composer@2.4-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.4-service"],
-			shared_libs: ["android.hardware.graphics.composer@2.1", "android.hardware.graphics.composer@2.2", "android.hardware.graphics.composer@2.3", "android.hardware.graphics.composer@2.4", "android.hardware.graphics.composer@2.1-resources", "android.hardware.graphics.composer@2.2-resources", "libbase", "libbinder", "libcutils", "libfmq", "libhardware", "libhidlbase", "libhwc2on1adapter", "libhwc2onfbadapter", "liblog", "libsync", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.graphics.composer@3.1-service",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.graphics.composer@3.1-service"],
-			shared_libs: ["libbase", "libbinder", "libbinder_ndk", "android.hardware.graphics.composer3-V1-ndk", "libcutils", "libhardware", "libhidlbase", "liblog", "libutils", "android.hardware.graphics.composer@2.2-resources", "android.hardware.graphics.composer@2.1-resources", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21618,24 +20869,6 @@ cc_prebuilt_binary {
 		},
 	},
 	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.media.omx@1.0-service",
-	owner: "samsung",
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service"],
-			shared_libs: ["libbinder", "libutils", "liblog", "libbase", "libavservices_minijail", "libcutils", "libhidlbase", "libstagefright_omx_vendor", "libstagefright_xmlparser", "android.hardware.media.omx@1.0", "android.hidl.memory@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
 	strip: {
 		none: true,
 	},
@@ -21687,24 +20920,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk-lazy"],
 			shared_libs: ["libbase", "libbinder_ndk", "libhidlbase", "libhidlmemory", "liblog", "libnativewindow", "libutils", "libneuralnetworks_sl_driver_mtk_prebuilt", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.sensors@2.0-service.multihal",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal"],
-			shared_libs: ["android.hardware.sensors@2.0", "android.hardware.sensors@2.0-ScopedWakelock", "android.hardware.sensors@2.1", "libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libpower", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
