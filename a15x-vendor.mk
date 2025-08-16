@@ -293,7 +293,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64_mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64_mtk.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.health-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.health-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc \
@@ -1453,10 +1452,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.frameworks.security.dsms-V1-ndk \
     vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.authfw@1.0 \
-    vendor.samsung.hardware.camera.device@5.0-impl \
-    vendor.samsung.hardware.camera.device@5.0 \
-    vendor.samsung.hardware.camera.provider@4.0-legacy \
-    vendor.samsung.hardware.camera.provider@4.0 \
     vendor.samsung.hardware.health-V1-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
     vendor.samsung.hardware.light-V1-ndk \
@@ -1601,7 +1596,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.authfw@1.0-service \
     vendor.samsung.hardware.biometrics.face-service \
     vendor.samsung.hardware.biometrics.fingerprint-service \
-    vendor.samsung.hardware.camera.provider@4.0-service_64 \
     vendor.samsung.hardware.gnss-service \
     vendor.samsung.hardware.health-service \
     vendor.samsung.hardware.hyper-service \
