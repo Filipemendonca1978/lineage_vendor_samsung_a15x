@@ -925,7 +925,6 @@ PRODUCT_PACKAGES += \
     liblivefocus_capture_engine \
     liblivefocus_preview.uniplugin@1.0 \
     liblivefocus_preview_engine \
-    libminiui \
     libmmagent \
     libmml \
     libmmlpqImpl \
@@ -1209,7 +1208,6 @@ PRODUCT_PACKAGES += \
     lib_eara_io_util \
     libaaa_ltm \
     libaaa_ltmx \
-    libacdk \
     libaiawb_moon \
     libaiawb_p1ggm \
     libaiawb_sun \
@@ -1560,7 +1558,6 @@ PRODUCT_PACKAGES += \
     dumpfaultd.mt6835 \
     eara_io_service \
     emservice \
-    factory \
     fpsgo \
     fsdbg_vendor \
     fuelgauged \

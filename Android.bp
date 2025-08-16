@@ -9153,27 +9153,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libminiui",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libminiui.so"],
-			shared_libs: ["libpixelflinger", "libpng", "libutils", "liblog", "libcutils", "libdrm", "libbase", "libc++", "libc", "libm", "libdl", ],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libminiui.so"],
-			shared_libs: ["libpixelflinger", "libpng", "libutils", "liblog", "libcutils", "libdrm", "libbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libmmagent",
 	owner: "samsung",
 	strip: {
@@ -14833,23 +14812,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libacdk",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libacdk.so"],
-			shared_libs: ["libcutils", "libimageio", "libcam.iopipe", "libmtkcam_stdutils", "libmtkcam_imgbuf", "libcam.halsensor", "libmtkcam_metadata", "libdrm", "libminiui", "libhardware", "libutils", "libmtkcam_fwkutils", "libmtkcam_modulehelper", "libion", "libion_mtk", "libmtkcam_imem", "libmtkcam_metastore", "libJpgEncPipe", "liblog", "libmtkcam_ulog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libaiawb_moon",
 	owner: "samsung",
 	strip: {
@@ -20427,23 +20389,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/emservice"],
 			shared_libs: ["libutils", "libcutils", "libbinder", "liblog", "libengmode_server", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "factory",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/factory"],
-			shared_libs: ["libbase_shim", "libcutils", "libnvram", "libfile_op", "libminui", "libjpeg", "libbase", "libfft_vendor", "libaudio_param_parser-vnd", "libxml2", "libselinux", "libalsautils", "libhardware_legacy", "libhardware", "libaudioutils", "libtinyalsa", "libtinycompress", "libaudiotoolkit_vendor", "libmedia_helper", "libladder", "vendor.mediatek.hardware.bluetooth.audio@2.1", "libhfmanagerwrapper", "liblog", "libutils", "android.system.suspend@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "android.hardware.health-V1-ndk", "android.hardware.light-V1-ndk", "libbinder_ndk", "libbinder", "android.hardware.light@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
