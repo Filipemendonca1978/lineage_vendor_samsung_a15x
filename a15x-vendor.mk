@@ -1466,7 +1466,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.channel-V1-ndk \
     vendor.samsung.hardware.radio.data-V1-ndk \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
-    vendor.samsung.hardware.radio.network-V1-ndk \
+    vendor.samsung.hardware.radio.network-V1-ndk-vendor \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     vendor.samsung.hardware.security.drk-V1-ndk \
     vendor.samsung.hardware.security.drk@2.0 \
@@ -1637,7 +1637,6 @@ PRODUCT_PACKAGES += \
     rcs_volte_stack64 \
     rt5512_calibration \
     rttv_v2 \
-    secril_config_svc \
     smartpa_nvtest \
     snap_utility_64 \
     snaplite_utility_64 \

@@ -18156,7 +18156,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libril_sem.so"],
-			shared_libs: ["libhidlbase", "android.hardware.radio@1.0", "android.hardware.radio@1.1", "android.hardware.radio@1.2", "libbase", "libbinder_ndk", "android.hardware.radio.config-V1-ndk", "android.hardware.radio.data-V1-ndk", "android.hardware.radio.messaging-V1-ndk", "android.hardware.radio.modem-V1-ndk", "android.hardware.radio.network-V1-ndk", "android.hardware.radio.sim-V1-ndk", "android.hardware.radio.voice-V1-ndk", "vendor.samsung.hardware.radio.bridge-V1-ndk", "vendor.samsung.hardware.radio.data-V1-ndk", "vendor.samsung.hardware.radio.messaging-V1-ndk", "vendor.samsung.hardware.radio.network-V1-ndk", "vendor.samsung.hardware.radio.sim-V1-ndk", "libcutils", "libhardware_legacy", "liblog", "librilutils", "libutils", "libfloatingfeature", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "android.hardware.radio@1.0", "android.hardware.radio@1.1", "android.hardware.radio@1.2", "libbase", "libbinder_ndk", "android.hardware.radio.config-V1-ndk", "android.hardware.radio.data-V1-ndk", "android.hardware.radio.messaging-V1-ndk", "android.hardware.radio.modem-V1-ndk", "android.hardware.radio.network-V1-ndk", "android.hardware.radio.sim-V1-ndk", "android.hardware.radio.voice-V1-ndk", "vendor.samsung.hardware.radio.bridge-V1-ndk", "vendor.samsung.hardware.radio.data-V1-ndk", "vendor.samsung.hardware.radio.messaging-V1-ndk", "vendor.samsung.hardware.radio.network-V1-ndk-vendor", "vendor.samsung.hardware.radio.sim-V1-ndk", "libcutils", "libhardware_legacy", "liblog", "librilutils", "libutils", "libfloatingfeature", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -19186,14 +19186,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.samsung.hardware.radio.network-V1-ndk",
+	name: "vendor.samsung.hardware.radio.network-V1-ndk-vendor",
 	owner: "samsung",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so"],
+			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk-vendor.so"],
 			shared_libs: ["libbinder_ndk", "vendor.samsung.hardware.radio-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -21764,23 +21764,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/rttv_v2"],
 			shared_libs: ["libaedv", "libcutils", "liblog", "libz", "libc", "libdl", "libm", "libc++", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "secril_config_svc",
-	owner: "samsung",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/secril_config_svc"],
-			shared_libs: ["libc", "libcutils", "libsecnativefeature", "libutils", "liblog", "libz", "libsemnativecarrierfeature", "libc++", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
