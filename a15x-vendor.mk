@@ -293,7 +293,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.health-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.health-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.security.engmode-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.engmode-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc \
@@ -1449,7 +1448,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.frameworks.security.dsms-V1-ndk \
     vendor.samsung.hardware.audio-V1-ndk \
     vendor.samsung.hardware.authfw@1.0 \
-    vendor.samsung.hardware.health-V1-ndk \
     vendor.samsung.hardware.keymint-V2-ndk \
     vendor.samsung.hardware.light-V1-ndk \
     vendor.samsung.hardware.nfc@2.0 \
@@ -1513,7 +1511,6 @@ PRODUCT_PACKAGES += \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.authfw@1.0-manifest.xml \
     vendor.samsung.hardware.biometrics.fingerprint-service.xml \
-    vendor.samsung.hardware.health-service.xml \
     vendor.samsung.hardware.radio.exclude.mediatek.xml \
     vendor.samsung.hardware.radio.exclude_ship.mediatek.xml \
     vendor.samsung.hardware.radio_manifest_2_33.xml \
@@ -1593,7 +1590,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.biometrics.face-service \
     vendor.samsung.hardware.biometrics.fingerprint-service \
     vendor.samsung.hardware.gnss-service \
-    vendor.samsung.hardware.health-service \
     vendor.samsung.hardware.hyper-service \
     vendor.samsung.hardware.light-service \
     vendor.samsung.hardware.security.drk@2.0-service \
