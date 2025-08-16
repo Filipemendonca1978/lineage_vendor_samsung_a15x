@@ -20087,7 +20087,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/aee_aedv64_v2"],
-			shared_libs: ["libaedv", "libcutils", "libbase", "liblog", "libunwindstack", "libmtk_drvb", "libselinux", "libz", "libc", "libdl", "libm", "libc++", ],
+			shared_libs: ["aedv64_shim", "libaedv", "libcutils", "libbase", "liblog", "libunwindstack", "libmtk_drvb", "libselinux", "libz", "libc", "libdl", "libm", "libc++", ],
 		},
 	},
 	compile_multilib: "64",
