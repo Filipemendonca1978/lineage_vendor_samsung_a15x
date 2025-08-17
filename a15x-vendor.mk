@@ -218,7 +218,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.usb@1.3-service.coral.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.3-service.coral.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
@@ -273,7 +272,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/snap_utility.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snap_utility.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/snaplite_utility.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snaplite_utility.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vaultkeeper_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vaultkeeper_common.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
@@ -899,7 +897,6 @@ PRODUCT_PACKAGES += \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libkeystore-wifi-hidl \
     libladder \
     liblibarm_mali_config_sysprops \
     liblivefocus_capture_engine \
@@ -1303,7 +1300,6 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     libisosechw \
-    libkeystore-engine-wifi-hidl \
     liblpcnr \
     libmipc \
     libmnl \
@@ -1402,7 +1398,7 @@ PRODUCT_PACKAGES += \
     libvkmanager_vendor \
     libvkservice \
     libvpu \
-    libwifi-hal \
+    libwifi-hal-mtk \
     libmtkcam_streaminfo_plugin-p1stt \
     nfc_nci_nxpsn \
     vendor.mediatek.hardware.aee@1.0 \
@@ -1452,12 +1448,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.iccc@1.0 \
     vendor.samsung.hardware.tlc.kg-V2-ndk \
     vendor.samsung.hardware.vibrator-V5-ndk \
-    vendor.samsung.hardware.wifi.hostapd-V1-ndk \
-    vendor.samsung.hardware.wifi.supplicant-V1-ndk \
-    vendor.samsung.hardware.wifi@2.0 \
-    vendor.samsung.hardware.wifi@2.1 \
-    vendor.samsung.hardware.wifi@2.2 \
-    vendor.samsung.hardware.wifi@2.3 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     com.samsung.android.authfw.ta.preload \
@@ -1468,7 +1458,6 @@ PRODUCT_PACKAGES += \
     NetworkStackResOverlay \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.usb@1.3-service.coral.xml \
-    android.hardware.wifi@1.0-service.xml \
     deviceManifest.xml \
     face-default-sec.xml \
     hyper-default-sec.xml \
@@ -1541,14 +1530,12 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.neuralnetworks-shim-service-mtk-lazy \
     android.hardware.usb@1.3-service.coral \
-    android.hardware.wifi@1.0-service-lazy \
     macloader \
     mfgloader \
     nxp.android.hardware.nfc@1.2-service \
     rild \
     samsung.software.media.c2@1.0-service \
     secaudiohalaidl \
-    tetheroffloadservice \
     vendor.mediatek.hardware.aee@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
@@ -1571,7 +1558,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.kg-service \
     vendor.samsung.hardware.tlc.payment@1.0-service \
     vendor.samsung.hardware.vibrator-service \
-    vendor.samsung.hardware.wifi@2.0-service \
     iod \
     ipsec_mon \
     jpegtool \
@@ -1615,7 +1601,6 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_rcs_ua64 \
     vpud \
-    wifi_dump \
     wlan_assistant \
     wmt_launcher \
     wmt_loader \

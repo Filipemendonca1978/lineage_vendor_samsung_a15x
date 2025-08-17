@@ -16868,51 +16868,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeystore-wifi-hidl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libkeystore-wifi-hidl.so",
-            ],
-            shared_libs: [
-                "android.system.wifi.keystore@1.0",
-                "libbase",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeystore-wifi-hidl.so",
-            ],
-            shared_libs: [
-                "android.system.wifi.keystore@1.0",
-                "libbase",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libladder",
     owner: "samsung",
     strip: {
@@ -32716,37 +32671,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeystore-engine-wifi-hidl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so",
-            ],
-            shared_libs: [
-                "android.system.keystore2-V1-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "libcrypto",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "liblpcnr",
     owner: "samsung",
     strip: {
@@ -36088,7 +36012,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal",
+    name: "libwifi-hal-mtk",
     owner: "samsung",
     strip: {
         none: true,
@@ -36096,7 +36020,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
+                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
             ],
             shared_libs: [
                 "libbase",
@@ -37465,178 +37389,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.wifi.hostapd-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.wifi.hostapd-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.wifi.supplicant-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.wifi.supplicant-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.wifi@2.0",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.0.so",
-            ],
-            shared_libs: [
-                "android.hardware.wifi@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.wifi@2.1",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.wifi@1.0",
-                "vendor.samsung.hardware.wifi@2.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.wifi@2.2",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.2.so",
-            ],
-            shared_libs: [
-                "android.hardware.wifi@1.0",
-                "vendor.samsung.hardware.wifi@2.0",
-                "vendor.samsung.hardware.wifi@2.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.samsung.hardware.wifi@2.3",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.3.so",
-            ],
-            shared_libs: [
-                "android.hardware.wifi@1.0",
-                "vendor.samsung.hardware.wifi@2.0",
-                "vendor.samsung.hardware.wifi@2.1",
-                "vendor.samsung.hardware.wifi@2.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.mtkradioex@3.0",
     owner: "samsung",
     strip: {
@@ -37784,15 +37536,6 @@ prebuilt_etc_xml {
     name: "android.hardware.usb@1.3-service.coral.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "android.hardware.wifi@1.0-service.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -39271,47 +39014,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.wifi@1.0-service-lazy",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libwifi-hal",
-                "libwifi-system-iface",
-                "libxml2",
-                "android.hardware.wifi@1.0",
-                "android.hardware.wifi@1.1",
-                "android.hardware.wifi@1.2",
-                "android.hardware.wifi@1.3",
-                "android.hardware.wifi@1.4",
-                "android.hardware.wifi@1.5",
-                "android.hardware.wifi@1.6",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "macloader",
     owner: "samsung",
     target: {
@@ -39488,46 +39190,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libaudioutils",
                 "libsecaudiohal_aidl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "tetheroffloadservice",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/tetheroffloadservice",
-            ],
-            shared_libs: [
-                "libhwbinder",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libforkexecwrap",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libnetutils",
-                "libhardware_legacy",
-                "libhardware",
-                "android.hardware.tetheroffload.config@1.0",
-                "android.hardware.tetheroffload.control@1.0",
-                "android.hardware.tetheroffload.control@1.1",
-                "vendor.mediatek.hardware.netdagent@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -40235,50 +39897,6 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "android.hardware.vibrator-V2-ndk",
                 "vendor.samsung.hardware.vibrator-V5-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.samsung.hardware.wifi@2.0-service",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libwifi-hal",
-                "libwifi-system-iface",
-                "libz",
-                "android.hardware.wifi@1.0",
-                "android.hardware.wifi@1.1",
-                "android.hardware.wifi@1.2",
-                "android.hardware.wifi@1.3",
-                "android.hardware.wifi@1.4",
-                "vendor.samsung.hardware.wifi@2.0",
-                "vendor.samsung.hardware.wifi@2.1",
-                "vendor.samsung.hardware.wifi@2.2",
-                "vendor.samsung.hardware.wifi@2.3",
                 "libc++",
                 "libc",
                 "libm",
@@ -41529,33 +41147,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wifi_dump",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wifi_dump",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     strip: {
         none: true,
     },
