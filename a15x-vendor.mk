@@ -295,7 +295,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.widevine.keyprov-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.snap-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.snap-lazy.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.kg-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.kg-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc \
@@ -495,13 +494,9 @@ PRODUCT_PACKAGES += \
     gnss_aidl_lib \
     hi5022q_mipi_raw_IdxMgr \
     hi5022q_mipi_raw_tuning \
-    android.hardware.gatekeeper@1.0-impl \
     android.hardware.graphics.allocator@4.0-impl-mediatek \
     android.hardware.graphics.mapper@4.0-impl-mediatek \
     android.hardware.renderscript@1.0-impl \
-    android.hardware.soundtrigger@2.3-impl \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@2.0-impl \
     audio.primary.mediatek \
     audio.primary.mt6835 \
     audio.r_submix.mediatek \
@@ -1111,7 +1106,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.hyper-V2-ndk \
     vendor.samsung.hardware.tlc.payment@1.0-impl \
     vendor.samsung.hardware.tlc.payment@1.0 \
-    android.hardware.soundtrigger@2.0-impl \
     libFrucSSMLib \
     libHEVCdec_sa.ca7.android \
     libbluetooth_audio_session_aidl_mediatek \
@@ -1454,7 +1448,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sysinput@1.1 \
     vendor.samsung.hardware.sysinput@1.2 \
     vendor.samsung.hardware.sysinput@1.3 \
-    vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung.hardware.tlc.iccc@1.0-impl \
     vendor.samsung.hardware.tlc.iccc@1.0 \
     vendor.samsung.hardware.tlc.kg-V2-ndk \
@@ -1503,7 +1496,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.widevine.keyprov-service.xml \
     vendor.samsung.hardware.sehradio_manifest_2_33.xml \
     vendor.samsung.hardware.snap-default.xml \
-    vendor.samsung.hardware.thermal@1.0-manifest.xml \
     vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml \
     vendor.samsung.hardware.tlc.kg-manifest.xml \
     vendor.samsung.hardware.vibrator-default.xml \
@@ -1575,7 +1567,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.widevine.keyprov-service \
     vendor.samsung.hardware.snap-service \
     vendor.samsung.hardware.sysinput@1.3-service \
-    vendor.samsung.hardware.thermal@1.0-service \
     vendor.samsung.hardware.tlc.iccc@1.0-service \
     vendor.samsung.hardware.tlc.kg-service \
     vendor.samsung.hardware.tlc.payment@1.0-service \
