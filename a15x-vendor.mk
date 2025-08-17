@@ -931,7 +931,6 @@ PRODUCT_PACKAGES += \
     libmtkhardware_legacy \
     libmtklimiter_vendor \
     libmtknetutils \
-    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtkshifter_vendor \
