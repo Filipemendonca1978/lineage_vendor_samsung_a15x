@@ -278,8 +278,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
-    vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc \
@@ -514,13 +512,11 @@ PRODUCT_PACKAGES += \
     gralloc.common \
     gralloc.default \
     local_time.default \
-    power.default \
     sound_trigger.primary.default \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.mms@1.7-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.samsung.hardware.audio@1.0-impl \
@@ -974,8 +970,6 @@ PRODUCT_PACKAGES += \
     libpixelflinger \
     libpkm \
     libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
     libpq_cust_base \
     libpq_prot \
     libpqframework \
@@ -1085,9 +1079,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
     vendor.mediatek.hardware.mms@1.7 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
     vendor.mediatek.hardware.mtkpower_applist-V1-ndk \
     vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
@@ -1149,7 +1140,6 @@ PRODUCT_PACKAGES += \
     vintf-codecsolution-V2-ndk \
     APUWareApusysAidlServer \
     APUWareUtilsServer \
-    android.hardware.power-service-mediatek \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     camera.mt6835 \
@@ -1476,7 +1466,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.wifi@2.1 \
     vendor.samsung.hardware.wifi@2.2 \
     vendor.samsung.hardware.wifi@2.3 \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     com.samsung.android.authfw.ta.preload \
@@ -1497,7 +1486,6 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     memtrack-mediatek.xml \
     nxp.android.hardware.nfc@1.2-service.xml \
-    power-mediatek.xml \
     sec_c2_manifest_default0_1_1.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.authfw@1.0-manifest.xml \
@@ -1574,7 +1562,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmagent@1.1-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.mms@1.7-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq_aidl-service \
     vendor.samsung.hardware.authfw@1.0-service \
