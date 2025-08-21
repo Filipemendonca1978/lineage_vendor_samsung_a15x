@@ -206,6 +206,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
+    vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.security.keymint-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-mtk.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/android.hardware.usb@1.3-service.coral.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.3-service.coral.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/samsung/a15x/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
@@ -1511,6 +1512,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.neuralnetworks-shim-service-mtk-lazy \
+    android.hardware.security.keymint-service.mtk \
     android.hardware.usb@1.3-service.coral \
     macloader \
     mfgloader \
